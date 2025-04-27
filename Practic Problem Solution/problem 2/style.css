@@ -1,0 +1,6 @@
+/* External CSS */
+#head {
+    background-color: red; /* This will apply if inline and internal are removed */
+    color: yellow;
+    font-weight: bold;
+}
