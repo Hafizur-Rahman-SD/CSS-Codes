@@ -1,0 +1,39 @@
+/*  Playing around with different CSS key-value rules */
+.playground {
+    background-color: #558456;         /* green background */
+    color: white;                      /* white text */
+    font-size: 25px;                     /* larger text */
+    padding: 25px;                       /* inside spacing */
+    margin: 45px;                        /* outside spacing */
+    border: 5px dashed white;          /* cool dashed border */
+    border-radius: 15px;                 /* rounded corners */
+    text-align: center;                  /* center text */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* shadow effect */
+    transition: transform 0.3s ease, background-color 0.3s ease;  /* smooth hover effects */
+  }
+  
+.playground2 {
+    background-color: #4667d4;         /* green background */
+    color: white;                      /* white text */
+    font-size: 30px;                     /* larger text */
+    padding: 30px;                       /* inside spacing */
+    margin: 50px;                        /* outside spacing */
+    border: 7px dashed white;          /* cool dashed border */
+    border-radius: 15px;                 /* rounded corners */
+    text-align: center;                  /* center text */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* shadow effect */
+    transition: transform 0.3s ease, background-color 0.3s ease;  /* smooth hover effects */
+  }
+
+
+  /*  Adding hover effect (Heard part for me)*/
+  .playground:hover {
+    transform: scale(1.1);    /* make bigger on hover */
+    background-color: #506d52;      /* darker green on hover */
+  }
+
+
+.playground2:hover {
+    transform: scale(1.3);    /* make bigger on hover */
+    background-color: #3b4f9a;      /* darker green on hover */
+  }
