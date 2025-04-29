@@ -1,0 +1,54 @@
+/* Problem 1: Grid header */
+.grid-header {
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    margin-bottom: 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Problem 2: Grid layout */
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.grid-box {
+    padding: 30px;
+    background-color: #e0e0e0;
+    text-align: center;
+}
+
+/* Problem 3: Responsive background */
+.responsive-bg {
+    padding: 40px;
+    text-align: center;
+    background-color: green;
+}
+
+@media only screen and (max-width: 800px) {
+    .responsive-bg {
+        background-color: red;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive-bg {
+        background-color: yellow;
+    }
+}
