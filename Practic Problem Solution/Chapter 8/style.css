@@ -1,0 +1,96 @@
+/* Problem 1: Progress bar animation */
+.progress-container {
+    width: 100%;
+    height: 30px;
+    background-color: #f0f0f0;
+    margin: 40px 0;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #4CAF50;
+    animation: progress 3s ease-in-out infinite;
+}
+
+@keyframes progress {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+
+/* Problem 2: Progress bar with transition */
+.transition-container {
+    margin: 40px 0;
+}
+
+.transition-bar {
+    width: 0;
+    height: 30px;
+    background-color: #2196F3;
+    transition: width 3s ease-in-out;
+}
+
+.transition-container.active .transition-bar {
+    width: 100%;
+}
+
+/* Problem 3: Rotating image */
+.rotating-image {
+    width: 200px;
+    height: 200px;
+    margin: 40px auto;
+    background-image: url('https://via.placeholder.com/200');
+    background-size: cover;
+    animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Problem 4: Image slider */
+.slider {
+    width: 800px;
+    height: 400px;
+    margin: 40px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-container {
+    display: flex;
+    width: 2400px;
+    animation: slide 9s infinite;
+}
+
+.slide {
+    width: 800px;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes slide {
+    0%, 30% { transform: translateX(0); }
+    33%, 63% { transform: translateX(-800px); }
+    66%, 97% { transform: translateX(-1600px); }
+    100% { transform: translateX(0); }
+}
+
+/* Button styling for transition demo */
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
