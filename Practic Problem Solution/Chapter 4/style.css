@@ -1,0 +1,65 @@
+/* Solution 1: Website Layout */
+.black-rowbar {
+    background-color: rgb(105, 39, 212);
+    height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.green-div {
+    background-color: green;
+    height: 200px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+/* Solutions 2-3-5: Poster with Google Font */
+.poster {
+    font-family: 'Baloo Bhai', cursive;
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+#star h1 {
+    text-transform: uppercase; /* Solution 5: uppercase text */
+    color: #333;
+}
+
+#star a {
+    text-decoration: none; /* Solution 3: remove underline */
+    color: rgb(0, 0, 255);
+    font-size: 18px;
+}
+
+#star a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Solution 4: Display vs Visibility */
+.visibility-demo {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #e9e9e9;
+}
+
+.box {
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.hidden-box {
+    visibility: hidden;
+}
+
+.none-box {
+    display: none;
+}
+
+.after-box {
+    background-color: #2196F3;
+}

@@ -1,0 +1,96 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Solution 1: Responsive Marker */
+.responsive-marker {
+    background-color: #ebe39c;
+    padding: 1.5em; /* Relative unit */
+    margin: 2rem 5%; /* Combination of rem and % units */
+    border-radius: 0.5em;
+    font-size: clamp(1rem, 2vw, 1.2rem); /* Responsive font size */
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Solution 2: Sticky Marker */
+.sticky-marker {
+    position: sticky;
+    top: 0;
+    background-color: #4caf50;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.scroll-content {
+    height: 1000px;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+/* Solution 3: List-style Property */
+.custom-list {
+    list-style: none; /* Remove default bullets */
+    padding-left: 0;
+}
+
+.custom-list li {
+    padding: 0.5em 1em;
+    margin: 0.5em 0;
+    background-color: #e3f2fd;
+    border-left: 5px solid #2196f3;
+}
+
+.custom-list li::before {
+    content: "→"; /* Custom bullet */
+    color: #2196f3;
+    margin-right: 0.5em;
+}
+
+/* Solution 4: Z-index Example */
+.z-index-demo {
+    position: relative;
+    height: 200px;
+    margin: 2em 0;
+}
+
+.box {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.box1 {
+    background-color: #f44336;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+
+.box2 {
+    background-color: #4caf50;
+    top: 50px;
+    left: 50px;
+    z-index: 2;
+}
+
+.box3 {
+    background-color: #2196f3;
+    top: 80px;
+    left: 80px;
+    z-index: 3;
+}
