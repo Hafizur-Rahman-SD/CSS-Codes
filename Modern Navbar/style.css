@@ -1,0 +1,74 @@
+/* Background for visualization */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000; /* black background */
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Glowing effect element */
+body::before {
+  content: "";
+  position: absolute;
+  inset: 40% -60% 0 -60%;
+  opacity: 0.3;
+  pointer-events: none;
+  background: radial-gradient(circle, #ff0000, transparent);
+  transform: rotate(180deg);
+}
+
+/* Navbar container */
+nav {
+  position: relative;
+  z-index: 1;
+}
+
+/* Unordered list (menu) styling */
+nav ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Menu item button */
+nav ul li button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  padding: 10px 0;
+  transition: color 0.3s ease;
+}
+
+/* Hover underline */
+nav ul li::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background-color: white;
+  width: 0%;
+  transition: width 0.3s ease;
+  margin-top: 5px;
+}
+
+/* On hover underline full */
+nav ul li:hover::after {
+  width: 100%;
+}
+
+/* Active class with red glow */
+nav ul li.active button {
+  color: #00ff11;
+  text-shadow: 0 0 10px #ff0000;
+}
